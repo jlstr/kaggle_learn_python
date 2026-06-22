@@ -1,0 +1,24 @@
+[project]
+name = "quant-template"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jose Estrella Campana",email = "jlecampana@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy (>=2.4.6,<3.0.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "matplotlib (>=3.11.0,<4.0.0)",
+    "scipy (>=1.18.0,<2.0.0)",
+    "jupyterlab (>=4.6.0,<5.0.0)",
+    "ipykernel (>=7.3.0,<8.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "quant_template", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

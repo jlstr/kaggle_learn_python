@@ -1,0 +1,13 @@
+services:
+
+  quant:
+
+    build:
+      context: .
+
+    volumes:
+      - .:/workspace
+
+    working_dir: /workspace
+
+    tty: true
